@@ -17,9 +17,6 @@ via .NET CLI:
     
 ```dotnet add package Envoy.Extras.Autofac```
 
-via Packet CLI
-
-```paket add Envoy.Extras.Autofac```
-
 ## Using Envoy with Autofac Container Integration
-...
+
+Read the [QuickStart](https://github.com/PeterKneale/Envoy/blob/master/doc/QuickStart.md) to get going.
