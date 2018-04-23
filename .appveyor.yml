@@ -16,7 +16,7 @@ before_build:
   - cmd: dotnet --info
 build_script:
   - cmd: dotnet restore ./src/Envoy.Extras.Autofac/Envoy.Extras.Autofac.csproj --verbosity m
-  - cmd: dotnet publish ./src/Envoy.Extras.Autofac/Envoy.Extras.Autofac.csproj
+  - cmd: dotnet build -c Release ./src/Envoy.Extras.Autofac/Envoy.Extras.Autofac.csproj
 test_script:
   - cmd: dotnet restore ./src/Envoy.Extras.Autofac.Tests/Envoy.Extras.Autofac.Tests.csproj --verbosity m
   - cmd: dotnet test ./src/Envoy.Extras.Autofac.Tests/Envoy.Extras.Autofac.Tests.csproj
