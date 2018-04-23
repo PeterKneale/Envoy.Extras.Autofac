@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netcoreapp2.0</TargetFramework>
+    <TargetFramework>netcoreapp2.0;net45</TargetFramework>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <Version>0.0.0</Version>
     <Authors>Peter Kneale</Authors>
@@ -21,7 +21,7 @@
 
   <ItemGroup>
     <PackageReference Include="Autofac" Version="4.8.0" />
-    <PackageReference Include="Envoy" Version="0.1.13" />
+    <PackageReference Include="Envoy" Version="0.1.20" />
   </ItemGroup>
 
 </Project>
