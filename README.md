@@ -17,9 +17,9 @@ via .NET CLI:
 
 ## Using Envoy
 
-- Read the [QuickStart](doc/QuickStart.md) to understand how to use the Envoy library.
+- Read the [QuickStart](https://github.com/PeterKneale/Envoy/doc/QuickStart.md) to understand how to use the Envoy library.
 
-- Execute the [Sample Application](src/Envoy.Sample) to see Envoy in action.
+- Execute the [Sample Application](https://github.com/PeterKneale/Envoy/src/Envoy.Sample) to see Envoy in action.
 
 ## Using Envoy with Autofac Container Integration
 
