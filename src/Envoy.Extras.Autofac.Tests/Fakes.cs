@@ -26,7 +26,7 @@ namespace Envoy.Extras.Autofac.Tests
     {
         public Task HandleAsync(TestCommand command, CancellationToken cancellationToken)
         {
-            return Task.CompletedTask;
+            return Task.FromResult(0);
         }
     }
 
@@ -34,7 +34,7 @@ namespace Envoy.Extras.Autofac.Tests
     {
         public Task HandleAsync(TestEvent evnt, CancellationToken cancellationToken)
         {
-            return Task.CompletedTask;
+            return Task.FromResult(0);
         }
     }
 

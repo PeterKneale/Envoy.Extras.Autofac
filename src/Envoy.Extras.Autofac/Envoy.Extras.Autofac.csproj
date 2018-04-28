@@ -21,7 +21,7 @@
 
   <ItemGroup>
     <PackageReference Include="Autofac" Version="4.8.0" />
-    <PackageReference Include="Envoy" Version="0.1.20" />
+    <PackageReference Include="Envoy" Version="0.1.22" />
   </ItemGroup>
 
 </Project>

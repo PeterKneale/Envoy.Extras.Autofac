@@ -15,6 +15,17 @@ via .NET CLI:
     
 ```dotnet add package Envoy.Extras.Autofac```
 
+## Using Envoy
+
+- Read the [QuickStart](doc/QuickStart.md) to understand how to use the Envoy library.
+
+- Execute the [Sample Application](src/Envoy.Sample) to see Envoy in action.
+
 ## Using Envoy with Autofac Container Integration
 
-Read the [QuickStart](https://github.com/PeterKneale/Envoy/blob/master/doc/QuickStart.md) to get going.
+```cs
+var builder = new ContainerBuilder();
+builder.RegisterEnvoy();
+builder.RegisterEnvoyHandlers(typeof(MyHandlers).Assembly);
+_container = builder.Build();
+```

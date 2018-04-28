@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27428.2027
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Envoy.Extras.Autofac", "Envoy.Extras.Autofac\Envoy.Extras.Autofac.csproj", "{39CE0075-DCA3-4C58-A1E5-8A0FD2DAA866}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Envoy.Extras.Autofac.Tests", "Envoy.Extras.Autofac.Tests\Envoy.Extras.Autofac.Tests.csproj", "{A2C4BB46-D1C9-4291-A0D1-651C4AC6E371}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{39CE0075-DCA3-4C58-A1E5-8A0FD2DAA866}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{39CE0075-DCA3-4C58-A1E5-8A0FD2DAA866}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{39CE0075-DCA3-4C58-A1E5-8A0FD2DAA866}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{39CE0075-DCA3-4C58-A1E5-8A0FD2DAA866}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A2C4BB46-D1C9-4291-A0D1-651C4AC6E371}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A2C4BB46-D1C9-4291-A0D1-651C4AC6E371}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A2C4BB46-D1C9-4291-A0D1-651C4AC6E371}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A2C4BB46-D1C9-4291-A0D1-651C4AC6E371}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {47373BEF-BC45-4902-99DE-D74C4DB09CCF}
+	EndGlobalSection
+EndGlobal
