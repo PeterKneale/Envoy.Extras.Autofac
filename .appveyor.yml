@@ -1,11 +1,20 @@
 image: Visual Studio 2017
+# git tag 1.2.3 to release to nuget
+version: '1.2.3'
 
 init:
-- ps: >-
-    if ($env:APPVEYOR_REPO_TAG -eq "true")
-    {
-        Update-AppveyorBuild -Version ($env:APPVEYOR_REPO_TAG_NAME)
-    }
+  - ps: $env:version = $env:APPVEYOR_BUILD_VERSION
+  - ps: $env:branch = $env:APPVEYOR_REPO_BRANCH
+  - ps: $env:build = $env:APPVEYOR_BUILD_NUMBER
+  - ps: $env:sha = $env:APPVEYOR_REPO_COMMIT.Substring(0, 7)
+  - ps: $env:tagged = $env:APPVEYOR_REPO_TAG
+  - ps: >-
+      if ($env:branch -ne "master" -Or $env:tagged -ne "true")
+      {
+        # version: version+branch.build.sha
+        $env:info = "$env:version-$env:branch.$env:sha"
+        Update-AppveyorBuild -Version $env:info
+      }
 
 dotnet_csproj:
   patch: true
@@ -14,15 +23,7 @@ dotnet_csproj:
   package_version: '{version}'
   assembly_version: '{version}'
   file_version: '{version}'
-  informational_version: '{version}'
-
-branches:
-  only:
-  - master
-
-before_build:
-  - cmd: dotnet --version
-  - cmd: dotnet --info
+  informational_version: '{info}'
 
 build_script:
   - cmd: dotnet restore ./src/Envoy.Extras.Autofac/Envoy.Extras.Autofac.csproj --verbosity m
@@ -43,4 +44,5 @@ deploy:
     skip_symbols: false
     artifact: NuGet
     on:
+      branch: master
       appveyor_repo_tag: true
